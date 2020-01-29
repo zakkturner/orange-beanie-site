@@ -1,0 +1,20 @@
+#aboutsub{
+    margin: 350px 0 150px 0;
+    background: url('../images/about-img.jpeg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+//   height: 1500px;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    h2{
+        font-size: 40px;
+        color: $orange;
+    }
+    .txt-type{
+        .txt{
+            border-right: 0.2rem solid $teal;
+            
+        }
+    }
+}

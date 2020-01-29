@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Righteous&display=swap");
+* {
+  box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  background-color: #F87635;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 999; }
+  header .nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    opacity: 0; }
+
+#home {
+  width: 100%;
+  position: relative;
+  background-color: #F87635;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle; }
+  #home h1 {
+    opacity: 0; }
+
+#aboutsub {
+  margin: 350px 0 150px 0;
+  background: url("../images/about-img.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6); }
+  #aboutsub h2 {
+    font-size: 40px;
+    color: #F87635; }
+  #aboutsub .txt-type .txt {
+    border-right: 0.2rem solid #308F88; }
+
+#about {
+  padding: 350px 0 150px 0;
+  position: relative;
+  width: 100%;
+  height: 2000px !important;
+  background-color: #308F88; }
+  #about .about-container {
+    margin: 50px; }
+    #about .about-container h1 {
+      position: absolute;
+      top: 2%;
+      left: 5%; }
+    #about .about-container p {
+      color: #261e1a;
+      width: 30%;
+      font-size: 25px;
+      top: 20%;
+      left: 5%;
+      position: absolute; }
+      #about .about-container p span {
+        width: 100%;
+        background: #F87635;
+        display: block;
+        height: 5px;
+        margin-top: 20px; }
+    #about .about-container img {
+      position: absolute; }
+    #about .about-container img:nth-of-type(1) {
+      width: 30%;
+      right: 10%;
+      top: 10%; }
+    #about .about-container img:nth-of-type(2) {
+      width: 25%;
+      right: 40%;
+      top: 29%; }
+
+#music {
+  background-color: #7D908E; }
+
+#videos {
+  background-color: #2B4240; }
+
+#contact {
+  background-color: #308F88; }
+
+#landing {
+  height: 100vh;
+  width: 100%; }
+  #landing .enter-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100% !important;
+    height: auto; }
+    #landing .enter-btn:focus {
+      outline: none; }
+    #landing .enter-btn .enter {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      border: none;
+      background-color: #F87635;
+      transition: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle; }
+      #landing .enter-btn .enter h3 {
+        font-size: 50px;
+        opacity: 0; }
+  #landing .absolute {
+    position: absolute; }
+    #landing .absolute:focus {
+      outline: none; }
+  #landing .fixed {
+    position: fixed;
+    background-color: #F87635;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle; }
+
+h1, h2, h3 {
+  font-family: 'Bangers', cursive;
+  color: #2B4240; }
+
+h1 {
+  font-size: 240px; }
+
+p {
+  font-family: 'Righteous', cursive; }
+
+a {
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  text-decoration: none;
+  color: #2B4240;
+  margin-right: 20px;
+  transition: .5s ease-in-out; }
+  a:hover {
+    color: #308F88; }
+
+.container {
+  margin: 0 150px; }
+
+#pinContainer {
+  width: 100%;
+  height: 100%; }
+
+.panel {
+  height: 100vh;
+  width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */
