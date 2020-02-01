@@ -7,7 +7,10 @@
   background-size: cover;
 //   height: 1500px;
   box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
-    h2{
+
+    .container{
+      padding-top: 100px;
+      h2{
         font-size: 40px;
         color: $orange;
     }
@@ -17,4 +20,8 @@
             
         }
     }
+    }
+    
 }
+
+

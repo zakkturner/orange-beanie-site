@@ -1,4 +1,25 @@
 #contact{
    
     background-color: $teal;
+    height: 2000px;
+    padding: 50px 50px;
+    h1{
+        padding-bottom: 40px;
+    }
+    h2{
+        font-size: 140px;
+        padding-bottom: 40px;
+    }
+    .socials{
+        display: flex;
+        a{
+            margin-right: 50px;
+            font-size: 240px;
+            &:hover{
+                color: $orange;
+                cursor: pointer;
+            }
+        }
+    }
 }
+

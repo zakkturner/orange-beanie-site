@@ -15,17 +15,35 @@
 <body>
     <header>
         <div class="nav">
-            <div class="left-nav">
+            <!-- <div class="left-nav">
                 <a href="#">About</a>
                 <a href="#">Music</a>
             </div>
             <div class="right-nav">
                 <a href="#">Videos</a>
                 <a href="#">Contact</a>
+            </div> -->
+            <div class="toggle-btn">
+                <span class="one"><i class="fas fa-bars"></i></span>
+        <span class="two"><i class="fas fa-times"></i></span>
+
+            </div>
+        
+        </div>
+        <div class="menu">
+            <div class="data">
+                <ul>
+                    <li>Navigation</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-
     </header>
+    
     <div id="pinContainer">
         <section id="home" class="panel home">
             <div class="title-container scroll" data-rate="-2" data-direction="vertical">
@@ -45,45 +63,104 @@
 
             </div>
         </section>
-        
+
         <section id="about" class="panel about ">
-            
+
             <div class="about-container sticky">
                 <h1 id="about-title">About</h1>
-                <p id="bio">Orange Beanie is an emerging artist from Indianapolis, IN. Due to his charismatic stage presence and personality he’s been dubbed an Odd-Ball and predominantly makes energetic music for other Odd-Balls to enjoy. However that doesn’t mean he’s a one trick pony, he can’t be boxed in artistically and he’s eager to prove it. <span></span></p>
-            <img id="bigImg" src="images/firstbreak.jpeg" alt="" srcset="">
-            <img id="smallImg" src="images/2ndbreak.jpg" alt="" srcset="">
-            <div id="circle"></div>
+                <p id="bio">Orange Beanie is an emerging artist from Indianapolis, IN. Due to his charismatic stage
+                    presence and personality he’s been dubbed an Odd-Ball and predominantly makes energetic music for
+                    other Odd-Balls to enjoy. However that doesn’t mean he’s a one trick pony, he can’t be boxed in
+                    artistically and he’s eager to prove it. <span></span></p>
+                <img id="bigImg" src="images/firstbreak.jpeg" alt="" srcset="">
+                <img id="smallImg" src="images/2ndbreak.jpg" alt="" srcset="">
+                <div id="circle"></div>
             </div>
-            
+
         </section>
         <section id="music" class="panel music">
-            <div class="disco">
-                <h2>Discography</h2>
-            </div>
-            <div class="listen">
-                <p>Listen To</p>
-                <h2>Young Dad</h2>
+            <div class="container">
+                <div class="listen">
+                    <p>Listen To</p>
+                    <h2 id="album-title"></h2>
+                    <div id="music-player"></div>
+                    <div class="button-container">
+                        <button id="youngDad" value="youngDad" onclick="changeAlbum()">Young Dad</button>
+                    <button id="idk" value="idk">IDKWTF</button>
+                    <button id="single" value="latest-single">Latest Single</button>
+                    </div>
+                    
+                </div>
+                <div class="music-cover" id="music-cover">
+                </div>
+
+                <div class="music-title">
+                    <h1>Music</h1>
+                </div>
             </div>
             <div class="stream-links">
-                <a href="">Spotify</a>
-                <a href="">Apple</a>
-                <a href="">SoundCloud</a>
-                <a href="">Youtube</a>
+                <p>More Music At:</p>
+                <a href="https://open.spotify.com/artist/5pRvcgnyHOQKAh1PRbtjkP?si=CuBoE7SlRBGAoW9M_WI-ow"> <i
+                        class="fab fa-spotify" target="_blank"></i>Spotify</a>
+                <a href="https://itunes.apple.com/us/artist/orange-beanie/1129611195" target="_blank"><i
+                        class="fab fa-apple"></i>Apple</a>
+                <a href="https://soundcloud.com/orangebeanie" target="_blank"> <i
+                        class="fab fa-soundcloud"></i>SoundCloud</a>
+                <a href="https://www.youtube.com/watch?v=JSWGjf37hEs" target="_blank"><i
+                        class="fab fa-youtube"></i>Youtube</a>
+            </div>
+        </section>
+        <section id="videosub" class="panel videosub">
+            <div class="container">
+                <div class="video-header">
+                    <h1>Videos</h1>
+                </div>
+
             </div>
         </section>
         <section id="videos" class="panel videos">
-            <h2>Videos</h2>
+            <div class="video-container" onmouseover="hoverText()">
+                <div class="video-box">
+                    <h2 id="they2">They 2</h2>
+                    <iframe class="music-video" width="560" height="315" src="https://www.youtube.com/embed/JSWGjf37hEs" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-box">
+                    <h2 id="nolease">No Lease</h2>
+                    <iframe class="music-video" width="560" height="315" src="https://www.youtube.com/embed/uaALo5vvIuc" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-box">
+                    <h2 id="hubcaps">Designer Hubcaps</h2>
+                    <iframe class="music-video" width="560" height="315" src="https://www.youtube.com/embed/kxFlk4bTCVo" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-box">
+                    <h2 id="math">Math Book</h2>
+                    <iframe class="music-video" width="560" height="315" src="https://www.youtube.com/embed/oyWMkP1BfHo" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
         </section>
         <section id="contact" class="panel contact">
-            <h2>Contact</h2>
+            <h1>Contact</h1>
+            <h2>OrangeBeanie@Gmail.com</h2>
+            <div class="socials">
+                <a href="https://www.facebook.com/orangebeaniefanpage/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/OrangeBeanie_" target="_blank"><i class="fab fa-twitter-square"></i></a>
+
+                <a href="https://www.instagram.com/orangebeanie/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            
         </section>
         <!-- </div> -->
     </div>
-    <footer>
-
-    </footer>
-
+    
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
@@ -95,7 +172,9 @@
     <script src="./js/sectionwipe.js"></script>
     <script src="./js/typewriter.js"></script>
     <script src="js/mainAnime.js"></script>
-
+    <script src="js/music.js"></script>
+    <script src="js/navbar.js"></script>
+    
 </body>
 
 </html>

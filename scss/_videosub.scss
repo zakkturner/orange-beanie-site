@@ -1,0 +1,25 @@
+#videosub{
+    margin: 350px 0 150px 0;
+    
+    background: url('../images/videos2.jpeg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1500px;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+
+    .container{
+      padding-top: 100px;
+      .video-header{
+        width: 575px;
+        height: 250px;
+        background-color: $orange;
+        border-radius: 25px;
+      }
+    }
+    
+}
+
+
+

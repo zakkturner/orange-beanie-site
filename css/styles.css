@@ -52,18 +52,55 @@ table {
 header {
   background-color: #F87635;
   width: 100%;
-  height: 100px;
+  height: 1px;
   position: relative;
   z-index: 999; }
   header .nav {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
     opacity: 0; }
+    header .nav .toggle-btn {
+      position: fixed;
+      margin: 1.4em;
+      padding: 1em;
+      width: 40px;
+      height: 12px;
+      right: 0;
+      z-index: 1;
+      cursor: pointer; }
+      header .nav .toggle-btn span.one {
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        color: #2B4240;
+        margin-top: 12px; }
+      header .nav .toggle-btn span.two {
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        color: #2B4240;
+        margin-top: 12px;
+        opacity: 1; }
+  header .menu {
+    z-index: 0;
+    position: fixed;
+    background: #F87635;
+    height: 100vh;
+    width: 100%;
+    top: -110%; }
+    header .menu .data {
+      padding: 8em 0 0 2em;
+      text-align: left; }
+      header .menu .data ul {
+        list-style: none; }
+        header .menu .data ul li:first-child {
+          font-size: 50px;
+          font-family: Bangers;
+          color: #308F88; }
+        header .menu .data ul li:not(:first-child) a {
+          font-size: 140px; }
 
 #home {
   width: 100%;
@@ -84,11 +121,13 @@ header {
   -o-background-size: cover;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6); }
-  #aboutsub h2 {
-    font-size: 40px;
-    color: #F87635; }
-  #aboutsub .txt-type .txt {
-    border-right: 0.2rem solid #308F88; }
+  #aboutsub .container {
+    padding-top: 100px; }
+    #aboutsub .container h2 {
+      font-size: 40px;
+      color: #F87635; }
+    #aboutsub .container .txt-type .txt {
+      border-right: 0.2rem solid #308F88; }
 
 #about {
   padding: 350px 0 150px 0;
@@ -127,13 +166,106 @@ header {
       top: 29%; }
 
 #music {
-  background-color: #7D908E; }
+  background-color: #7D908E;
+  height: 2000px; }
+  #music p {
+    color: #261e1a; }
+  #music .container {
+    padding: 150px 150px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    #music .container .music-title {
+      width: 33%; }
+      #music .container .music-title h1 {
+        writing-mode: vertical-rl;
+        padding-left: 100px; }
+    #music .container .listen {
+      width: 33%;
+      text-align: center; }
+      #music .container .listen p {
+        padding-bottom: 20px; }
+      #music .container .listen h2 {
+        font-size: 100px; }
+      #music .container .listen #music-player {
+        padding: 30px 0; }
+      #music .container .listen button {
+        background-color: #F87635;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-family: 'Righteous', cursive;
+        transition: .4s ease-in-out .2s; }
+        #music .container .listen button:hover {
+          background-color: #2B4240;
+          color: #F87635;
+          cursor: pointer; }
+    #music .container .music-cover {
+      width: 33%;
+      height: auto; }
+      #music .container .music-cover img {
+        width: 100%; }
+  #music .stream-links {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px; }
+    #music .stream-links p {
+      margin-bottom: 15px; }
+    #music .stream-links a:hover {
+      color: #F87635; }
+    #music .stream-links a .fab {
+      margin-right: 5px; }
+
+#videosub {
+  margin: 350px 0 150px 0;
+  background: url("../images/videos2.jpeg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1500px;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6); }
+  #videosub .container {
+    padding-top: 100px; }
+    #videosub .container .video-header {
+      width: 575px;
+      height: 250px;
+      background-color: #F87635;
+      border-radius: 25px; }
 
 #videos {
-  background-color: #2B4240; }
+  background-color: #2B4240;
+  height: 2000px; }
+  #videos .video-container {
+    padding: 100px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; }
+    #videos .video-container .video-box {
+      padding-bottom: 50px; }
+    #videos .video-container h2 {
+      color: #F87635;
+      font-size: 50px; }
 
 #contact {
-  background-color: #308F88; }
+  background-color: #308F88;
+  height: 2000px;
+  padding: 50px 50px; }
+  #contact h1 {
+    padding-bottom: 40px; }
+  #contact h2 {
+    font-size: 140px;
+    padding-bottom: 40px; }
+  #contact .socials {
+    display: flex; }
+    #contact .socials a {
+      margin-right: 50px;
+      font-size: 240px; }
+      #contact .socials a:hover {
+        color: #F87635;
+        cursor: pointer; }
 
 #landing {
   height: 100vh;
@@ -204,5 +336,281 @@ a {
 .panel {
   height: 100vh;
   width: 100%; }
+
+@media only screen and (max-width: 40em) {
+  h1 {
+    font-size: 70px; }
+
+  header {
+    width: 100%; }
+    header .nav .toggle-btn {
+      margin: 0;
+      left: 0; }
+    header .menu {
+      max-width: 375px; }
+      header .menu .data ul {
+        list-style: none; }
+        header .menu .data ul li:first-child {
+          font-size: 20px; }
+        header .menu .data ul li:not(:first-child) a {
+          font-size: 50px; }
+
+  #home .title-container {
+    padding: 20px 20px;
+    display: block; }
+  #home #titleOne {
+    padding-left: 250px !important; }
+
+  .scrollmagic-pin-spacer {
+    margin: 0 !important; }
+
+  #aboutsub {
+    width: 100vw;
+    height: 100vh;
+    background: #261e1a; }
+    #aboutsub .container {
+      padding-top: 406px; }
+
+  #about {
+    height: 500px !important; }
+    #about .about-container {
+      display: block; }
+      #about .about-container h1 {
+        left: 10%; }
+      #about .about-container p {
+        top: 15%;
+        font-size: 15px;
+        width: 45%;
+        left: 10%; }
+      #about .about-container img:nth-of-type(1) {
+        width: 30%;
+        right: 10%;
+        top: 15%; }
+      #about .about-container img:nth-of-type(2) {
+        width: 30%;
+        height: auto;
+        right: 10%;
+        top: 50%; }
+
+  #music {
+    height: 800px; }
+    #music .container {
+      padding: 50px 70px; }
+      #music .container .music-title {
+        width: 13%; }
+        #music .container .music-title h1 {
+          writing-mode: vertical-rl;
+          padding: 0; }
+      #music .container .listen {
+        width: 23%;
+        text-align: center; }
+        #music .container .listen p {
+          padding-bottom: 20px; }
+        #music .container .listen h2 {
+          font-size: 50px !important; }
+        #music .container .listen #music-player {
+          padding: 30px 0; }
+        #music .container .listen .button-container {
+          display: flex;
+          justify-content: center;
+          padding: 100px 100px 0 120px; }
+          #music .container .listen .button-container button {
+            background-color: #F87635;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-family: 'Righteous', cursive;
+            transition: .4s ease-in-out .2s; }
+            #music .container .listen .button-container button:hover {
+              background-color: #2B4240;
+              color: #F87635;
+              cursor: pointer; }
+      #music .container .music-cover {
+        display: none; }
+    #music .stream-links {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 25px;
+      margin-bottom: 100px; }
+      #music .stream-links p {
+        font-size: 20px;
+        margin-bottom: 15px; }
+      #music .stream-links a {
+        font-size: 12px; }
+        #music .stream-links a:hover {
+          color: #F87635; }
+        #music .stream-links a .fab {
+          margin-right: 5px; }
+
+  #videosub .container .video-header {
+    width: 170px;
+    height: 70px;
+    background-color: #F87635;
+    border-radius: 25px; }
+
+  #videos {
+    background-color: #2B4240;
+    height: 100vh; }
+    #videos .video-container {
+      padding: 100px 55px;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center; }
+      #videos .video-container .video-box {
+        padding-bottom: 100px; }
+        #videos .video-container .video-box iframe {
+          width: 100%;
+          height: 100%; }
+      #videos .video-container h2 {
+        color: #F87635;
+        font-size: 50px; }
+
+  #contact {
+    height: 850px; }
+    #contact h2 {
+      font-size: 30px; }
+    #contact .socials a {
+      font-size: 40px;
+      margin-right: 20px; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  h1 {
+    font-size: 90px; }
+
+  header {
+    width: 100%; }
+    header .nav .toggle-btn {
+      margin: 0;
+      left: 0; }
+    header .menu {
+      width: 100%; }
+      header .menu .data ul {
+        list-style: none; }
+        header .menu .data ul li:first-child {
+          font-size: 50px; }
+        header .menu .data ul li:not(:first-child) a {
+          font-size: 100px; }
+
+  #home .title-container {
+    padding: 20px 20px;
+    display: block; }
+  #home #titleOne {
+    padding-left: 150px !important; }
+
+  #aboutsub {
+    width: 100vw;
+    height: 100vh; }
+    #aboutsub .container {
+      padding-top: 406px; }
+
+  #about {
+    height: 100vh; }
+    #about .about-container {
+      display: block; }
+      #about .about-container h1 {
+        left: 10%; }
+      #about .about-container p {
+        top: 10%;
+        font-size: 15px;
+        width: 45%;
+        left: 10%; }
+      #about .about-container img:nth-of-type(1) {
+        width: 30%;
+        right: 10%;
+        top: 10%; }
+      #about .about-container img:nth-of-type(2) {
+        width: 25%;
+        right: 40%;
+        top: 20%; }
+
+  #music {
+    height: 100vh; }
+    #music .container {
+      padding: 50px 120px; }
+      #music .container .music-title {
+        width: 33%; }
+        #music .container .music-title h1 {
+          writing-mode: vertical-rl;
+          padding-top: 117px;
+          margin-right: 100px; }
+      #music .container .listen {
+        width: 33%;
+        text-align: center; }
+        #music .container .listen p {
+          padding-bottom: 20px; }
+        #music .container .listen h2 {
+          font-size: 50px !important; }
+        #music .container .listen #music-player {
+          padding: 30px 0; }
+          #music .container .listen #music-player iframe {
+            width: 155px; }
+        #music .container .listen .button-container {
+          display: flex;
+          justify-content: center;
+          padding: 100px 100px 0 120px; }
+          #music .container .listen .button-container button {
+            background-color: #F87635;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-family: 'Righteous', cursive;
+            transition: .4s ease-in-out .2s; }
+            #music .container .listen .button-container button:hover {
+              background-color: #2B4240;
+              color: #F87635;
+              cursor: pointer; }
+      #music .container .music-cover {
+        width: 33%;
+        height: auto; }
+        #music .container .music-cover img {
+          padding-top: 117px;
+          width: 280px;
+          height: auto; }
+    #music .stream-links {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 25px;
+      margin-bottom: 100px; }
+      #music .stream-links p {
+        font-size: 20px;
+        margin-bottom: 15px; }
+      #music .stream-links a {
+        font-size: 12px; }
+        #music .stream-links a:hover {
+          color: #F87635; }
+        #music .stream-links a .fab {
+          margin-right: 5px; }
+
+  #videosub .container .video-header {
+    width: 218px;
+    height: 86px;
+    background-color: #F87635;
+    border-radius: 25px; }
+
+  #videos {
+    background-color: #2B4240;
+    height: 1200px; }
+    #videos .video-container {
+      padding: 100px 55px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center; }
+      #videos .video-container .video-box {
+        padding-bottom: 100px; }
+        #videos .video-container .video-box iframe {
+          width: 100%;
+          height: 100%; }
+      #videos .video-container h2 {
+        color: #F87635;
+        font-size: 50px; }
+
+  #contact {
+    height: 100vh; }
+    #contact h2 {
+      font-size: 80px; }
+    #contact .socials a {
+      font-size: 80px;
+      margin-right: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */
