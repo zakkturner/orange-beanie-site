@@ -355,11 +355,13 @@ a {
         header .menu .data ul li:not(:first-child) a {
           font-size: 50px; }
 
-  #home .title-container {
-    padding: 20px 20px;
-    display: block; }
-  #home #titleOne {
-    padding-left: 250px !important; }
+  #home {
+    overflow-x: hidden; }
+    #home .title-container {
+      padding: 20px 20px;
+      display: block; }
+    #home #titleOne {
+      padding-left: 250px !important; }
 
   .scrollmagic-pin-spacer {
     margin: 0 !important; }
@@ -372,26 +374,26 @@ a {
       padding-top: 206px; }
 
   #about {
-    height: 500px !important;
+    height: 100vh;
     overflow-x: hidden; }
     #about .about-container {
       display: block; }
       #about .about-container h1 {
         left: 10%; }
       #about .about-container p {
-        top: 15%;
+        top: 10%;
         font-size: 15px;
         width: 45%;
         left: 10%; }
       #about .about-container img:nth-of-type(1) {
         width: 30%;
         right: 10%;
-        top: 15%; }
+        top: 10%; }
       #about .about-container img:nth-of-type(2) {
         width: 30%;
         height: auto;
         right: 10%;
-        top: 50%; }
+        top: 20%; }
 
   #music {
     height: 800px;
@@ -453,12 +455,13 @@ a {
 
   #videos {
     background-color: #2B4240;
-    height: 2000px; }
+    height: 3000px; }
     #videos .video-container {
       padding: 100px 55px;
       display: grid;
       grid-template-columns: 1fr;
-      justify-items: center; }
+      justify-items: center;
+      margin-bottom: 200px; }
       #videos .video-container .video-box {
         padding-bottom: 100px; }
         #videos .video-container .video-box iframe {

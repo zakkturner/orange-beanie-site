@@ -30,7 +30,7 @@ function updatePercentage(){
 
 tlTwo = new TimelineMax();
 
-tlTwo.from(".music-title", 1, {x:'100%' , opacity:0});
+tlTwo.from(".music-title", 1, {x:'50%' , opacity:0});
 const scene2 = new ScrollMagic.Scene({
     triggerElement: '.listen'
 })

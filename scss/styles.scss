@@ -118,6 +118,7 @@ a{
     }
     // HOME
     #home{
+        overflow-x: hidden;
         .title-container{
             padding: 20px 20px;
             display: block;
@@ -145,7 +146,7 @@ a{
       }
     //About
     #about{
-        height: 500px !important;
+        height: 100vh;
         overflow-x: hidden;
       .about-container{
           h1{
@@ -153,7 +154,7 @@ a{
           }
           display: block;
           p{
-              top:15%;
+              top:10%;
               font-size: 15px;
               width: 45%;
               left: 10%;
@@ -161,13 +162,13 @@ a{
             img:nth-of-type(1){
               width: 30%;
               right: 10%;
-              top: 15%;
+              top: 10%;
           }
           img:nth-of-type(2){
               width: 30%;
               height: auto;
               right: 10%;
-              top: 50%;
+              top: 20%;
           }
       }
     }
@@ -266,12 +267,13 @@ a{
     // Videos
     #videos{
         background-color: $olive;
-        height: 2000px;
+        height: 3000px;
         .video-container{
             padding: 100px 55px;
             display: grid;
             grid-template-columns: 1fr ; 
             justify-items: center;
+            margin-bottom: 200px;
     
     
             .video-box{
