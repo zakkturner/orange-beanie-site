@@ -115,7 +115,7 @@ header {
 
 #aboutsub {
   margin: 350px 0 150px 0;
-  background: url("../images/about-img.jpeg") no-repeat center center fixed;
+  background: url("../images/about-img.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -220,7 +220,7 @@ header {
 
 #videosub {
   margin: 350px 0 150px 0;
-  background: url("../images/videos2.jpeg") no-repeat center center;
+  background: url("../images/videos2.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
